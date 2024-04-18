@@ -1,0 +1,113 @@
+.offers {
+    width: 60vw;
+    height: 60vh;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 0px 140px;
+    margin-bottom: 150px;
+    background: linear-gradient(45deg, #ffefe1 0%, #a97974 60%);
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offers-left h1 {
+    color: #171717;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.offers-left p {
+    color: #171717;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* .offers-left button
+{
+   
+} */
+
+.offers-right img {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 50px;
+
+}
+
+.offers-right img {
+    width: 380px;
+}
+
+
+
+.offers-left button {
+    width: 200px;
+    height: 60px;
+    margin-top: 30px;
+    padding: 0.9em 1.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    color: transparent;
+    border: 3px solid #9c0014;
+    font-size: 14px;
+    border-radius: 10px;
+    position: relative;
+    font-family: inherit;
+    background: transparent;
+    cursor: pointer;
+}
+
+.offers-left button::before {
+    content: "Offers";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #9c0014;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.offers-left button:hover::before {
+    left: 100%;
+    transform: scale(0) rotateY(360deg);
+    opacity: 0;
+}
+
+.offers-left button::after {
+    content: "Check Now";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #9c0014;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: scale(0) rotateY(0deg);
+    opacity: 0;
+}
+
+.offers-left button:hover::after {
+    left: 0;
+    transform: scale(1) rotateY(360deg);
+    opacity: 1;
+}
